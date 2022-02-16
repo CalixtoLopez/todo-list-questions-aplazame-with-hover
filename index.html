@@ -1,62 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-<style type="text/css">
-    .boton{
-        background-color: blue;
-        color: white;
-        border:none;
-        padding: 16px;
-        margin: 10px;
-        display: block;
-        padding: 13px;
-        font-size: 18.5px;
-        cursor: pointer;
-        width: 700px;
-    
-    }
-    .links_aplazame a{
-        text-decoration: none;
-        color:black;
-        display: block;
-        padding: 13px;
-    
-    }
-    .links_aplazame{background-color: #f9f9f9;display: none; width: 700px; margin: 10px;}
-    .links_aplazame a:hover{
-        background-color: #f1f1f1f1;
-    }
-    .desplegable:hover .links_aplazame{
-        display: block;
-    }
-    .desplegable{
-        /*position: absolute;*/
-    }
+
+    <style type="text/css">
+        .boton {
+            background-color: #9ee69e;
+            color: black;
+            border: none;
+            padding: 16px;
+            margin: 10px;
+            display: block;
+            padding: 13px;
+            font-size: 18.5px;
+            cursor: pointer;
+            width: 575px;
+
+        }
+        .boton_plus{
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 16px;
+            margin: 10px;
+            display: block;
+            padding: 13px;
+            font-size: 18.5px;
+            cursor: pointer;
+            width: 150px;
+
+
+        }
+        .links_aplazame a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 13px;
+
+        }
+
+        .links_aplazame {
+            background-color: #f9f9f9;
+            display: none;
+            width: 575px;
+            margin: 10px;
+            font-size: 18.5px;
+        }
+
+        .links_aplazame a:hover {
+            background-color: #f1f1f1f1;
+        }
+
+        .desplegable:hover .links_aplazame {
+            display: block;
+        }
+
+        .desplegable {
+            /*position: absolute;*/
+        }
+
+        .center_aplazame {
+            display: grid;
+            justify-content: center;
+        }
+        
     </style>
-    <div class="desplegable">
-        <button class="boton"> ¿Cómo puedo usar Aplazame para pagar ahora y pagar mas tarde?</button>
-        <div class = "links_aplazame">
-            <a href="#">Visita alguna de nuestras tiendas asociadas, añade al carrito los productos que quieras y elige Aplazame como método de pago en el checkout.
-    
-            </a>
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+
+
+    <div class="center_aplazame">
+        <div class="desplegable">
+            <article class="boton">Sé feliz hoy, paga después. Compra alguna de nuestras mejores planchas térmicas en
+                estas
+                dos semanas, págala a plazos, 0% intereses ¿te lo vas a perder?
+                Con Aplazame, te ofrecemos la posibilidad de pagar a plazos la compra de cualquiera de estas planchas
+                térmicas. ¿En cuántos plazos? Concretamente, en seis.</article>
+
+
         </div>
-        
-    </div>
-    <div class="desplegable">
-        <button class="boton"> ¿Qué métodos de pago acepta Aplazame?</button>
-        <div class = "links_aplazame">
-            <a href="#">Visita alguna de nuestras tiendas asociadas, añade al carrito los productos que quieras y elige Aplazame como método de pago en el checkout.
-    
-            </a>
+        <div class="desplegable">
+            <button class="boton"> ¿Puedo elegir en qué fecha pago mis cuotas?<i class="fas fa-plus" style="float:right;"></i></button>
+
+
+
+
+            <div class="links_aplazame">
+                <a href="#">Visita alguna de nuestras tiendas asociadas, añade al carrito los productos que quieras y
+                    elige
+                    Aplazame como método de pago en el checkout.
+                </a>
+
+
+            </div>
+
         </div>
-        
+        <div class="desplegable">
+            <button class="boton"> ¿Si decido pagar de golpe, hay problema? <i class="fas fa-plus" style="float:right;"></i></button>
+            <div class="links_aplazame">
+                <a href="#">No. No habrá ninguna penalización.
+
+                </a>
+            </div>
+
+        </div>
+        <div class="desplegable">
+            <button class="boton"> ¿Qué intereses voy a pagar?<i class="fas fa-plus" style="float:right;"></i></button>
+            <div class="links_aplazame">
+                <a href="#">Ninguno. Nosotros asumimos todos los costes financieros de la operación.
+
+                </a>
+            </div>
+
+        </div>
+        <div class="desplegable">
+            <button class="boton"> ¿Puedo elegir el número de cuotas?<i class="fas fa-plus" style="float:right;"></i></button>
+            <div class="links_aplazame">
+                <a href="#">Sí. Podrás elegir realizar el pago entre 1 a 6 cuotas mensuales.
+
+                </a>
+            </div>
+
+        </div>
+        <div class="desplegable">
+            <button class="boton"> ¿Puedo aplicar, además, un código descuento si lo tengo?<i class="fas fa-plus" style="float:right;"></i></button>
+            <div class="links_aplazame">
+                <a href="#">No. No será aplicable un código descuento a los productos que formen parte de este plan
+                    Aplazame. En caso de utilizarse, la tienda se reserva el derecho a rechazar dicho descuento.
+
+                </a>
+            </div>
+
+        </div>
+        <div class="desplegable">
+            <button class="boton"> ¿Pueden rechazarme la solicitud de financiación?<i class="fas fa-plus" style="float:right;"></i></button>
+            <div class="links_aplazame">
+                <a href="#">Sí. La aprobación de la solicitud está en manos de Aplazame. La empresa realizará una
+                    evaluación de riesgo de cada solicitud y se reserva el derecho a rechazarla. Alguno de los motivos
+                    de rechazo podría ser estar reportado en un fichero de morosidad o no haber podido realizar el cargo
+                    de la entrada en la tarjeta provista por el cliente.
+
+                </a>
+            </div>
+
+        </div>
+        <div class="center_aplazame">
+            <button class="boton_plus "> ¿Más Dudas? ¡Pregúntanos!</button>
+            
+        </div>
     </div>
 </body>
+
 </html>
