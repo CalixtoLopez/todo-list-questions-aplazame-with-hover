@@ -11,6 +11,110 @@
 <body>
 
     <style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (min-width: 800px){
+            .sub_stripe{
+                text-decoration: none;
+                color:blue;
+                border-bottom: 3px solid blue; 
+                color: #000000;
+            }
+            .boton {
+                background-color: #9ee69e;
+                color: black;
+                border: none;
+                padding: 16px;
+                margin: 10px;
+                display: block;
+                padding: 13px;
+                font-size: 16px;
+                cursor: pointer;
+                width: 575px;
+                
+            }
+            .banner_beinsen{
+                
+                color: black;
+                border: none;
+                padding: 16px;
+                margin: 10px;
+                display: block;
+                padding: 13px;
+                font-size: 20px;
+                cursor: pointer;
+                width: 800px;
+            }
+            
+            .boton_plus{
+                background-color: blue;
+
+                border: none;
+                padding: 16px;
+                margin: 10px;
+                display: block;
+                padding: 13px;
+                font-size: 16px;
+                cursor: pointer;
+                width: 150px;
+                text-decoration: none;
+                
+              
+                
+            }
+            .boton_plus_a{
+                text-decoration: none;
+                color: white;
+            }
+            .links_aplazame a {
+                text-decoration: none;
+                color: black;
+                display: block;
+                padding: 13px;
+          font-size: 15px;
+            }
+    
+            .links_aplazame {
+                background-color: #f9f9f9;
+                display: none;
+                width: 575px;
+                margin: 10px;
+      
+            }
+    
+            .links_aplazame a:hover {
+                background-color: #f1f1f1f1;
+            }
+    
+            .desplegable:hover .links_aplazame {
+                display: block;
+            }
+            .desplegable {
+                /*position: absolute;*/
+            }
+    
+            .center_aplazame {
+                display: grid;
+                justify-content: center;
+            }
+        }
+
+    @media only screen and (max-width: 800px){
+        .sub_stripe{
+                text-decoration: none;
+                color:blue;
+                border-bottom: 3px solid blue; 
+                color: #000000;
+            }
         .boton {
             background-color: #9ee69e;
             color: black;
@@ -18,13 +122,13 @@
             padding: 16px;
             margin: 10px;
             display: block;
-            padding: 13px;
-            font-size: 16px;
+            padding: 8px;
+            font-size: 12px;
             cursor: pointer;
-            width: 575px;
+            width: 350px;
 
         }
-        .banner_beinsen{
+        .banner_beinsen_max{
      
             color: black;
             border: none;
@@ -34,8 +138,9 @@
             padding: 13px;
             font-size: 20px;
             cursor: pointer;
-            width: 800px;
+            width: 350px;
         }
+        .margin_foto{margin-top:370px;}
         
         .boton_plus{
             background-color: blue;
@@ -62,7 +167,7 @@
         .links_aplazame {
             background-color: #f9f9f9;
             display: none;
-            width: 575px;
+            width: 350px;
             margin: 10px;
   
         }
@@ -83,24 +188,23 @@
             display: grid;
             justify-content: center;
         }
-        
+    }
     </style>
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
         <div class="center_aplazame">
-        <div class="desplegable">
-            <img style="float: left;;"src="https://tiendasublimacion.com/pub/media/catalog/product/cache/f63ff88d72c925312dba1bd78f267dec/b/e/belicecentro_1.jpg" />
-            <article class="banner_beinsen"><p><strong>Sé feliz hoy, paga después.</strong> </p>
-                <p><strong> Compra alguna de nuestras mejores planchas térmicas en
-                estas
-                dos semanas, págala a plazos, 0% intereses ¿te lo vas a perder?</strong></p>
-                <p><strong>Con Aplazame, te ofrecemos la posibilidad de pagar a plazos la compra de cualquiera de estas planchas
-                térmicas. ¿En cuántos plazos? Concretamente, en seis.</strong></p></article>
-
-        </div>
+            <div class="desplegable" style="margin:60px">
+                <img style="float: left;;"src="https://tiendasublimacion.com/pub/media/catalog/product/cache/f63ff88d72c925312dba1bd78f267dec/b/e/belicecentro_1.jpg" />
+                <article class="banner_beinsen"><p><strong  style= "font-size:25px"><u class="sub_stripe">Sé feliz hoy</u>, paga después.</strong> </p>
+                    <p><strong> Compra alguna de nuestras mejores planchas térmicas en
+                    estas
+                    dos semanas, págala a plazos, 0% intereses ¿te lo vas a perder?</strong></p>
+                    <p><strong>Con <font color="blue" size="5">Aplazame</font>, te ofrecemos la posibilidad de pagar a plazos la compra de cualquiera de estas planchas
+                    térmicas. ¿En cuántos plazos? Concretamente, en seis.</strong></p></article>
+    
+            </div>
         </div>
 <!--end-->
     <div class="center_aplazame">
-        
         <div class="desplegable">
             <button class="boton"> ¿Puedo elegir en qué fecha pago mis cuotas?<i class="fas fa-plus" style="float:right;"></i></button>
 
@@ -167,8 +271,7 @@
 
         </div>
         <div class="center_aplazame">
-            <button class="boton_plus "> ¿Más Dudas? ¡Pregúntanos!</button>
-            
+            <button class="boton_plus"> <a class="boton_plus_a "  style="text-decoration:none; color:white;font-size:18px" href="https://api.whatsapp.com/send?phone=34678337591" target="_self">¿Más Dudas? ¡Pregúntanos!</a></button>
         </div>
     </div>
 
